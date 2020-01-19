@@ -1,0 +1,214 @@
+@font-face
+  font-family: "Rufo"
+  src: url('/fonts/Rufo/Russian Fonts - RF Rufo Bold.ttf') format("truetype")
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: "Core Sans"
+  src: url('/fonts/Core Sans/S-Core - CoreSansNRSC35Light-Italic.otf') format("opentype")
+  font-weight: 300
+  font-style: italic
+
+@font-face
+  font-family: "Core Sans"
+  src: url('/fonts/Core Sans/S-Core - CoreSansNRSC45Regular.otf') format("opentype")
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: "Core Sans"
+  src: url('/fonts/Core Sans/S-Core - CoreSansNRSC65Bold.otf') format("opentype")
+  font-weight: 700
+  font-style: normal
+
+
+@mixin Rufo()
+  font-family: "Rufo"
+  font-weight: 400
+
+@mixin CoreSans()
+	font-family: "Core Sans"
+
+
+.text
+  &_h1
+    +Rufo
+    font-size: 6rem
+
+  &_h2
+    +Rufo
+    font-size: 4rem
+
+  &_h3
+    +Rufo
+    font-size: 2.5rem
+
+  &_h4
+    +Rufo
+    font-size: 2rem
+
+  &_h5
+    +Rufo
+    font-size: 1.5rem
+
+  &_h6
+    +Rufo
+    font-size: 1.25rem
+    letter-spacing: 0.05rem
+
+  &_large
+    +CoreSans
+    font-size: 1.25rem
+    font-weight: 400
+
+  &_medium
+    +CoreSans
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 0.05rem
+
+  &_medium_italic
+    +CoreSans
+    font-size: 1rem
+    font-style: italic
+    font-weight: 300
+
+  &_small
+    +CoreSans
+    font-size: 0.9rem
+    font-weight: 400
+    letter-spacing: 0.05rem
+
+  &_small_italic
+    +CoreSans
+    font-size: 0.9rem
+    font-style: italic
+    font-weight: 300
+
+  &_subtitle
+    +CoreSans
+    font-size: 0.9rem
+    font-weight: 700
+    letter-spacing: 0.1em
+
+  &_caption
+    +CoreSans
+    font-size: 0.6rem
+    font-weight: 300
+
+  &_overline
+    +Rufo
+    font-size: 0.65rem
+    letter-spacing: 0.1rem
+    text-transform: uppercase
+
+  &_button_large
+    +Rufo
+    font-size: 1rem
+    letter-spacing: 0.1rem
+    text-transform: uppercase
+
+  &_button_medium
+    +Rufo
+    font-size: 0.9rem
+    letter-spacing: 0.1rem
+    text-transform: uppercase
+
+  &_button_small
+    +Rufo
+    font-size: 0.75rem
+    letter-spacing: 0.1rem
+    text-transform: uppercase
+
+
+// **mixin**
+
+@mixin H1()
+	+Rufo
+	font-size: 6rem
+
+@mixin H2()
+	+Rufo
+	font-size: 4rem
+
+@mixin H3()
+	+Rufo
+	font-size: 2.5rem
+
+@mixin H4()
+	+Rufo
+	font-size: 2rem
+
+@mixin H5()
+	+Rufo
+	font-size: 1.5rem
+
+@mixin H6()
+	+Rufo
+	font-size: 1.25rem
+	letter-spacing: 0.05rem
+
+@mixin Large()
+	+CoreSans
+	font-size: 1.25rem
+	font-weight: 300
+
+@mixin Medium()
+	+CoreSans
+	font-size: 1rem
+	font-weight: 300
+  letter-spacing: 0.05rem
+
+@mixin Medium_italic()
+	+CoreSans
+	font-size: 1rem
+	font-style: italic
+	font-weight: 300
+
+@mixin Small()
+	+CoreSans
+	font-size: 0.9rem
+	font-weight: 300
+  letter-spacing: 0.05rem
+
+@mixin Small_italic()
+	+CoreSans
+	font-size: 0.9rem
+	font-style: italic
+	font-weight: 300
+
+@mixin Subtitle()
+	+CoreSans
+	font-size: 0.9rem
+	font-weight: 700
+  letter-spacing: 0.1em
+
+@mixin Caption()
+	+CoreSans
+	font-size: 0.6rem
+	font-weight: 300
+
+@mixin Overline()
+	+Rufo
+	font-size: 0.65rem
+	letter-spacing: 0.1rem
+	text-transform: uppercase
+
+@mixin Button_large()
+	+Rufo
+	font-size: 1rem
+	letter-spacing: 0.1rem
+	text-transform: uppercase
+
+@mixin Button_medium()
+	+Rufo
+	font-size: 0.9rem
+	letter-spacing: 0.1rem
+	text-transform: uppercase
+
+@mixin Button_small()
+	+Rufo
+	font-size: 0.75rem
+	letter-spacing: 0.1rem
+	text-transform: uppercase

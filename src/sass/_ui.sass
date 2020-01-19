@@ -1,0 +1,212 @@
+@mixin FlexAlign()
+	display: flex
+	align-items: center
+
+@mixin FlexCenter()
+	display: flex
+	justify-content: center
+	align-items: center
+
+
+// **buttons**
+
+.btn-light
+	+FlexCenter
+	width: 16rem
+	height: 4rem
+	background: $grey0
+	border-radius: 0.5rem
+	text-decoration: none
+  user-select: none
+  outline: none
+	color: $black
+	cursor: pointer
+	transition: box-shadow 200ms, background 200ms
+	&:hover
+		box-shadow: $shadow-4dp_pink
+	&:active
+		background: $grey30
+		box-shadow: none
+	// &[href="#"]
+	// 	background: transparent
+	// 	border-color: transparent
+	// 	box-shadow: none
+	// 	color: $grey30
+	// 	cursor: default
+
+.btn-light_p
+	+FlexCenter
+	width: 16rem
+	height: 4rem
+	background: $grey0
+	border-radius: 0.5rem
+	text-decoration: none
+  user-select: none
+  outline: none
+	color: $black
+	cursor: pointer
+	transition: box-shadow 200ms, background 200ms
+	&:hover
+		box-shadow: $shadow-4dp_blue
+	&:active
+		background: $grey30
+		box-shadow: none
+	// &[href="#"]
+	// 	background: transparent
+	// 	border-color: transparent
+	// 	box-shadow: none
+	// 	color: $grey30
+	// 	cursor: default
+
+.btn-light_b
+	+FlexCenter
+	width: 16rem
+	height: 4rem
+	background: $white
+	border: 1px solid $blue60
+	border-radius: 0.5rem
+	text-decoration: none
+  user-select: none
+  outline: none
+	color: $blue60
+	cursor: pointer
+	transition: box-shadow 200ms, background 200ms
+	&:hover
+		box-shadow: 0px 2px 4px #828282
+	&:active
+		background: $grey0
+		box-shadow: none
+	// &[href="#"]
+	// 	background: transparent
+	// 	border-color: transparent
+	// 	box-shadow: none
+	// 	color: $grey30
+	// 	cursor: default
+
+.btn-blue
+	+FlexCenter
+	width: 16rem
+	height: 4rem
+	background: $gradient_blue
+	border-radius: 0.5rem
+	box-shadow: $shadow-4dp_pink
+	text-decoration: none
+  user-select: none
+  outline: none
+	color: $white
+	cursor: pointer
+	transition: box-shadow 200ms, background 200ms
+	&:hover
+		box-shadow: $shadow-8dp_pink
+	&:active
+		box-shadow: none
+	// &[href="#"]
+	// 	background: $grey0
+	// 	border-color: transparent
+	// 	box-shadow: none
+	// 	color: $grey30
+	// 	cursor: default
+
+.btn-pink
+	+FlexCenter
+	width: 16rem
+	height: 4rem
+	background: $gradient_pink
+	border-radius: 0.5rem
+	box-shadow: $shadow-4dp_blue
+	text-decoration: none
+  user-select: none
+	color: $white
+	cursor: pointer
+	transition: box-shadow 200ms, background 200ms
+	&:hover
+		box-shadow: $shadow-8dp_blue
+	&:active
+		box-shadow: none
+	// &[href="#"]
+	// 	background: $grey0
+	// 	border-color: transparent
+	// 	box-shadow: none
+	// 	color: $grey30
+	// 	cursor: default
+
+
+// **links**
+
+.linkto
+	display: table
+	+Button-s
+	padding-left: 0.45rem
+	padding-right: 0.3rem
+	border-bottom: 1px solid $blue60
+	line-height: 2rem
+	text-decoration: none
+	color: $blue60
+	cursor: pointer
+	transition: color 200ms, border-color 200ms
+	.icon-linkto
+		position: relative
+		top: 2px
+		margin-left: 0.5rem
+		font-size: 0.95rem
+		&:before
+			color: $blue60
+			transition: color 200ms
+	&:hover
+		border-color: $blue80
+		color: $blue80
+		.icon-linkto
+			&:before
+				color: $blue80
+	&:active
+		border-color: $grey70
+		color: $grey70
+		.icon-linkto
+			&:before
+				color: $grey70
+	// &[href="#"]
+	// 	border-color: $grey30
+	// 	color: $grey30
+	// 	cursor: default
+	// 	.icon-linkto
+	// 		&:before
+	// 			color: $grey30
+
+.linkto_white
+	display: table
+	+Button-s
+	padding-left: 0.45rem
+	padding-right: 0.3rem
+	border-bottom: 1px solid $white
+	line-height: 2rem
+	text-decoration: none
+	color: $white
+	cursor: pointer
+	transition: color 200ms, border-color 200ms
+	.icon-linkto
+		position: relative
+		top: 2px
+		margin-left: 0.5rem
+		font-size: 0.95rem
+		&:before
+			color: $white
+			transition: color 200ms
+	&:hover
+		border-color: $blue30
+		color: $blue30
+		.icon-linkto
+			&:before
+				color: $blue30
+	&:active
+		border-color: $blue05
+		color: $blue05
+		.icon-linkto
+			&:before
+				color: $blue05
+	// &[href="#"]
+	// 	border-color: $grey30
+	// 	color: $grey30
+	// 	cursor: default
+	// 	.icon-linkto
+	// 		&:before
+	// 			color: $grey30

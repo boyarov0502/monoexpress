@@ -1,0 +1,250 @@
+// **columns**
+
+// --flex--
+.fl-1
+	width: 7rem
+
+.fl-2
+	width: 7*2+2rem
+
+.fl-3
+	width: 7*3+4rem
+
+.fl-4
+	width: 7*4+2*3rem
+
+.fl-5
+	width: 7*5+2*4rem
+
+.fl-6
+	width: 7*6+2*5rem
+
+@media screen and ( max-width: 1296px ) // tablet
+	.fl-4
+		width: 7*3+4rem
+
+@media screen and ( max-width: 695px ) // mobile
+	.fl-2
+		width: 12rem
+
+	.fl-6, .fl-5
+		width: 7*3+4rem
+
+
+// --grid--
+.gr-3
+	padding-top: 1rem
+	padding-bottom: 2rem
+
+.gr-6
+	padding-top: 2rem
+	padding-bottom: 3rem
+
+@media screen and ( max-width: 1296px )
+	.gr-6
+		padding-top: 1rem
+		padding-bottom: 2rem
+
+
+// **padding**
+
+.pad_default
+	padding-top: 8rem
+	padding-bottom: 12rem
+
+.pad_2rem
+	padding-top: 2rem
+	padding-bottom: 2rem
+
+.pad_4rem
+	padding-top: 4rem
+	padding-bottom: 4rem
+
+.pad_6rem
+	padding-top: 6rem
+	padding-bottom: 7rem
+
+.pad_7rem
+	padding-top: 6.5rem
+	padding-bottom: 7.5rem
+
+.pad_10rem
+	padding-top: 10rem
+	padding-bottom: 10rem
+
+@media screen and ( max-width: 695px )
+	.pad_default
+		padding-top: 5rem
+		padding-bottom: 7rem
+
+	.pad_4rem
+		padding-top: 2rem
+		padding-bottom: 2rem
+
+	.pad_6rem
+		padding-top: 6rem
+		padding-bottom: 5rem
+
+	.pad_7rem
+		padding-top: 6rem
+		padding-bottom: 6rem
+
+	.pad_10rem
+		padding-top: 5.5rem
+		padding-bottom: 5rem
+
+
+// **box**
+
+.box-50
+	width: 7*6+2*5rem
+	&_l
+		float: left
+		width: 7*6+2*5rem
+	&_r
+		float: right
+		width: 7*6+2*5rem
+
+.box-75
+	&_l
+		float: left
+		width: 7*9+2*8rem
+
+@media screen and ( max-width: 1296px )
+	.box-50
+		&_l, &_r
+			float: none
+
+	.box-75
+		&_l
+			float: none
+			width: 7*6+2*5rem
+
+@media screen and ( max-width: 695px )
+	.box-50
+		width: 7*3+4rem
+		&_l, &_r
+			width: 7*3+4rem
+
+	.box-75
+		&_l
+			width: 7*3+4rem
+
+
+// **container**
+
+@media screen and ( max-width: 695px )
+	.container
+		width: 25rem
+		margin: auto
+
+@media screen and ( min-width: 696px ) and ( max-width: 1296px )
+	.container
+		width: 52rem
+		margin: auto
+
+@media screen and ( min-width: 1297px )
+	.container
+		width: 52*2+2rem
+		margin: auto
+
+
+
+// **rem**
+
+// --mobile--
+@media screen and ( max-width: 318px )
+	html, body
+		font-size: 10px
+
+@media screen and ( min-width: 319px ) and ( max-width: 347px )
+	html, body
+		font-size: 11px
+
+@media screen and ( min-width: 348px ) and ( max-width: 376px )
+	html, body
+		font-size: 12px
+
+@media screen and ( min-width: 377px ) and ( max-width: 405px )
+	html, body
+		font-size: 13px
+
+@media screen and ( min-width: 406px ) and ( max-width: 434px )
+	html, body
+		font-size: 14px
+
+@media screen and ( min-width: 435px ) and ( max-width: 463px )
+	html, body
+		font-size: 15px
+
+@media screen and ( min-width: 464px ) and ( max-width: 672px )
+	html, body
+		font-size: 16px
+
+@media screen and ( min-width: 673px ) and ( max-width: 695px )
+	html, body
+		font-size: 17px
+
+
+// --tablet--
+@media screen and ( min-width: 696px ) and ( max-width: 753px )
+	html, body
+		font-size: 12px
+
+@media screen and ( min-width: 754px ) and ( max-width: 811px )
+	html, body
+		font-size: 13px
+
+@media screen and ( min-width: 812px ) and ( max-width: 869px )
+	html, body
+		font-size: 14px
+
+@media screen and ( min-width: 870px ) and ( max-width: 927px )
+	html, body
+		font-size: 15px
+
+@media screen and ( min-width: 928px ) and ( max-width: 1088px )
+	html, body
+		font-size: 16px
+
+@media screen and ( min-width: 1089px ) and ( max-width: 1190px )
+	html, body
+		font-size: 17px
+
+@media screen and ( min-width: 1191px ) and ( max-width: 1296px )
+	html, body
+		font-size: 18px
+
+
+// --desktop--
+@media screen and ( min-width: 1297px ) and ( max-width: 1343px )
+	html, body
+		font-size: 11px
+
+@media screen and ( min-width: 1344px ) and ( max-width: 1455px )
+	html, body
+		font-size: 12px
+
+@media screen and ( min-width: 1456px ) and ( max-width: 1567px )
+	html, body
+		font-size: 13px
+
+@media screen and ( min-width: 1568px ) and ( max-width: 1679px )
+	html, body
+		font-size: 14px
+
+@media screen and ( min-width: 1680px ) and ( max-width: 1791px )
+	html, body
+		font-size: 15px
+
+@media screen and ( min-width: 1792px ) and ( max-width: 1920px )
+	html, body
+		font-size: 16px
+
+@media screen and ( min-width: 1921px ) and ( max-width: 2040px )
+	html, body
+		font-size: 17px
+
+@media screen and ( min-width: 2041px )
+	html, body
+		font-size: 18px
